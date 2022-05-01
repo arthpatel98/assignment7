@@ -1,0 +1,104 @@
+
+* {
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+  position: relative;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Buttons */
+
+.submit-button {
+  outline: 0;
+  border: 0;
+  padding: 10px 20px;
+  cursor: pointer;
+  max-width: 200px;
+}
+
+.submit-button.submit-button-dark {
+  background-color: #676565;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.submit-button.submit-button-dark:hover {
+  background-color: #464343;
+  box-shadow: 0 5px 15px -5px #464343;
+}
+
+.submit-button.submit-button-dark:active {
+  background-color: #676565;
+  transition: none;
+}
+
+.submit-button.submit-button.submit-button-dark:focus {
+  outline: 2px solid black;
+}
+
+.submit-button.submit-button-dark:focus:not([data-focus-visible-added]) {
+  outline: none;
+}
+
+.root-container {
+  margin: 0 auto;
+  max-width: 768px;
+  padding: 20px 40px;
+}
+
+.add-product-form {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.add-product-form .form-element-container {
+  width: 50%;
+  display: flex;
+  flex-flow: column;
+  margin-bottom: 10px;
+}
+
+.add-product-form label {
+  display: contents;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.add-product-form-input,
+.add-product-form-select {
+  width: 200px;
+  padding: 5px;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 10px 0 20px;
+}
+
+.table th,
+.table td {
+  border: 1px solid silver;
+  padding: 5px;
+}
+
+.submit-button {
+  margin-top: 10px;
+}
+
+/* Media queries for mid-size devices or smaller */
+@media (max-width: 768px) {
+  .add-product-form {
+    flex-flow: column;
+  }
+}
